@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imagen1"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_weight="1"
+        android:background="@drawable/indice"
+         />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:textColor=" #7ca5c1 "
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_persona_nombre"
+            android:layout_width="wrap_content"
+            android:textColor=" #7ca5c1 "
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="nombre" />
+
+        <TextView
+            android:id="@+id/tv_item_persona_descripcion"
+            android:textColor=" #7ca5c1 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="descripcion" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_item_persona_unidad"
+                android:textColor=" #7ca5c1 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+
+                android:text="unidad" />
+
+            <TextView
+                android:id="@+id/tv_item_persona_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor=" #7ca5c1 "
+
+                android:layout_marginHorizontal="10dp"
+                android:text="precio" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</android.widget.LinearLayout>
